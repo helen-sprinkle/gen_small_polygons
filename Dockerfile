@@ -34,8 +34,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     libv8-3.14-dev \
     libprotobuf-dev \
     protobuf-compiler \
-  && add-apt-repository -y ppa:opencpu/jq
-  && apt-get install -y libjq-dev
+  && add-apt-repository -y ppa:opencpu/jq \
+  && apt-get install -y libjq-dev \
   && install2.r --error \
     --deps TRUE \
     tidyverse \
