@@ -33,10 +33,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     sqlite3 \
     tk-dev \
     libv8-3.14-dev \
-    libprotobuf-dev \
-    protobuf-compiler \
   && add-apt-repository -y ppa:opencpu/jq \
-  && apt-get install -y libjq-dev \
   && install2.r --error \
     --deps TRUE \
     tidyverse \
@@ -47,14 +44,12 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     remotes \
     selectr \
     caTools \
-    BiocManager \
     RColorBrewer \
     RandomFields \
     RNetCDF \
     classInt \
     deldir \
     gstat \
-    hdf5r \
     lidR \
     mapdata \
     maptools \
