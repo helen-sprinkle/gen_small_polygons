@@ -77,6 +77,4 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     GISTools \
     tbart \
     ggvoronoi \
-    tmap \
-    ## from bioconductor
-    && R -e "BiocManager::install('rhdf5')"
+    tmap
