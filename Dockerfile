@@ -1,6 +1,8 @@
 FROM rocker/rstudio:3.6.1
 
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
+    python-software-properties \
+    software-properties-common \
     libxml2-dev \
     libcairo2-dev \
     libsqlite3-dev \
