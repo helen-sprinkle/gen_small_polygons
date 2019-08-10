@@ -37,8 +37,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     tk8.6-dev \
   && install2.r --error \
     --deps TRUE \
-    tidyverse \
     magrittr \
+    data.table \
     ggplot2 \
     devtools \
     formatR \
