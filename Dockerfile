@@ -98,5 +98,9 @@ RUN install2.r --error \
     spatstat \
     spdep \
     geoR \
-    geosphere\
-    tmap
+    geosphere \
+    ggvoronoi \
+    tbart \
+    geojsonio \
+    tmap \
+    GISTools
