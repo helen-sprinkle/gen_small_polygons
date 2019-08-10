@@ -98,4 +98,5 @@ RUN install2.r --error \
     spatstat \
     spdep \
     geoR \
-    geosphere
+    geosphere\
+    tmap
