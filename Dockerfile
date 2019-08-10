@@ -1,13 +1,9 @@
 FROM rocker/rstudio:3.6.1
 
-RUN apt-get update -qq && apt-get -y --no-install-recommends install \
-    libxml2-dev \
-    libcairo2-dev \
-    libssh2-1-dev \
-    unixodbc-dev \
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends \
     lbzip2 \
     libfftw3-dev \
-    libgdal-dev \
     libgeos-dev \
     libgsl0-dev \
     libgl1-mesa-dev \
@@ -17,27 +13,25 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     libjq-dev \
     liblwgeom-dev \
     libpq-dev \
-    libproj-dev \
     libprotobuf-dev \
     libnetcdf-dev \
+    libsqlite3-dev \
     libssl-dev \
     libudunits2-dev \
     netcdf-bin \
     postgis \
     protobuf-compiler \
     sqlite3 \
+    tk-dev \
+    unixodbc-dev
   && install2.r --error \
-    --deps TRUE \
-    magrittr \
-    data.table \
-    ggplot2 \
-    devtools \
     RColorBrewer \
     RandomFields \
     RNetCDF \
     classInt \
     deldir \
     gstat \
+    hdf5r \
     lidR \
     mapdata \
     maptools \
@@ -52,12 +46,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     sp \
     spacetime \
     spatstat \
-    spatialreg \
     spdep \
     geoR \
-    geosphere \
-    geojsonio \
-    GISTools \
-    tbart \
-    ggvoronoi \
-    tmap
+    geosphere
