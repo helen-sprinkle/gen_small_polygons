@@ -1,7 +1,7 @@
 FROM rocker/rstudio:3.6.1
 
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
-    software-properties-common \
+    libgsl-dev \
     libxml2-dev \
     libcairo2-dev \
     libsqlite3-dev \
@@ -33,7 +33,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     sqlite3 \
     tk-dev \
     libv8-3.14-dev \
-  && add-apt-repository -y ppa:opencpu/jq \
   && install2.r --error \
     --deps TRUE \
     tidyverse \
