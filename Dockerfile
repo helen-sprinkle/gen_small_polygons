@@ -23,7 +23,7 @@ RUN apt-get update \
     protobuf-compiler \
     sqlite3 \
     tk-dev \
-    unixodbc-dev
+    unixodbc-dev \
   && install2.r --error \
     RColorBrewer \
     RandomFields \
