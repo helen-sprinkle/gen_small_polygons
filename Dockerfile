@@ -1,15 +1,10 @@
 FROM rocker/rstudio:3.6.1
 
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
-    libgsl-dev \
     libxml2-dev \
     libcairo2-dev \
-    libsqlite3-dev \
-    libmariadbd-dev \
-    libmariadb-client-lgpl-dev \
     libssh2-1-dev \
     unixodbc-dev \
-    libsasl2-dev \
     lbzip2 \
     libfftw3-dev \
     libgdal-dev \
@@ -31,20 +26,12 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     postgis \
     protobuf-compiler \
     sqlite3 \
-    tk-dev \
-    libv8-3.14-dev \
-    tcl8.6-dev \
-    tk8.6-dev \
   && install2.r --error \
     --deps TRUE \
     magrittr \
     data.table \
     ggplot2 \
     devtools \
-    formatR \
-    remotes \
-    selectr \
-    caTools \
     RColorBrewer \
     RandomFields \
     RNetCDF \
